@@ -92,9 +92,17 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias nrd="~/GYG_partnership/affiliate-partner-portal/npm run dev"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# git specifics 
+alias git-commit-files="git diff-tree --no-commit-id --name-only -r" # <commit_id>
+alias gf="git -f"
+
+# wireless board scan
+alias scanarea='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
+alias sniffinterface='sudo /usr/libexec/airportd en0 sniff'
+alias setchannelto1='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --channel=1'
 
 export PATH=$PATH:/Users/antoniomello/.gygvenv/bin
